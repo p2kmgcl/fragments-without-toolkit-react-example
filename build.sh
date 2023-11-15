@@ -12,7 +12,7 @@ cp my-collection/my-fragment/fragment.json build/my-collection/my-fragment
 cp my-collection/my-fragment/index.html build/my-collection/my-fragment
 cp my-collection/my-fragment/index.css build/my-collection/my-fragment
 
-npx esbuild my-collection/my-fragment/index.jsx --bundle --external:react --outfile=build/my-collection/my-fragment/index.js
+npx esbuild my-collection/my-fragment/index.jsx --log-level=error --bundle --external:react --outfile=build/my-collection/my-fragment/index.js
 
 cd build && zip -qr my-collection.zip my-collection
 
